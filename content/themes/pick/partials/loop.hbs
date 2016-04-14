@@ -24,23 +24,6 @@
 
     {{^has tag="quote"}} {{! not show in quote and link posts}}
         <header class="entry-header">
-            <div class="post-format">In 
-                 {{#if featured}}
-                     Featured
-                {{else}}
-                    {{#has tag="link, audio, video, gallery, image, status"}} 
-                        {{#has tag="image"}}Image{{/has}} 
-                        {{#has tag="audio"}}Audio{{/has}} 
-                        {{#has tag="video"}}Video{{/has}} 
-                        {{#has tag="gallery"}}Gallery{{/has}} 
-                        {{#has tag="quote"}}Quote{{/has}} 
-                        {{#has tag="status"}}Status{{/has}} 
-                        {{#has tag="link"}}Link{{/has}} 
-                    {{else}}
-                        Starndard
-                    {{/has}}
-                {{/if}}
-            </div> <!-- / entry-meta -->
             {{#is "post"}}
                 <script>
                     // remnove span tag from head title
